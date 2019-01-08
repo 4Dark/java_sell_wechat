@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: qq062525
+    url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true   #  打印出数据库语句
+  jackson:
+    default-property-inclusion: non_null  #如果某字段必填，则对其赋予初始值  字段为null，则统一不返还
+server:
+  context-path: /sell
+wechat:
+  mpAppid:
+  mpAppSecret:
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  path: /var/log/sell.log
+#  level: com.imooc.LoggerTest:debug
+
+
